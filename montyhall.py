@@ -35,7 +35,7 @@ while True:
     else:
         print("You lose.")
         intloss += 1
-    print("You have won " + str((intwin/(intwin + intloss))*100) + "% of the time.")
+    print("You have won " + str(round(((intwin/(intwin + intloss))*100), 2)) + "% of the time.")
     strquit = input("Quit? (y/n)")
     if strquit == "y":
         break
